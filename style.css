@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.main-container {
+    display: flex;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.robot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #2e2e2e;
+}
+
+.robot-image {
+    width: 600px;
+    height: auto;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    background-color: #1a1a1a;
+    transition: background-color 0.3s;
+}
+
+.chat-container.recording {
+    background-color: #ff4c4c;
+}
+
+.chat-box {
+    width: 90%;
+    height: 60vh;
+    background-color: #2e2e2e;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.message {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message.user {
+    align-items: flex-end;
+}
+
+.message .text {
+    background-color: #3e3e3e;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.message.user .text {
+    background-color: #007bff;
+    color: white;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.record-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.record-btn:active {
+    background-color: #0056b3;
+}
